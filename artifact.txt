@@ -1,0 +1,79 @@
+PageRank Algorithm Simulation
+--- Data Loading ---
+Dataset already exists.
+
+--- Building Graph ---
+Loading graph from data\web-Google.txt...
+Graph loaded successfully.
+Number of Nodes: 875713
+Number of Edges: 5105039
+
+--- Exact PageRank (Stationary Distribution) ---
+Computing PageRank using NetworkX (Power Iteration)...
+
+--- Simulated PageRank (Random Sampling) ---
+Simulating Random Walk with 5000000 steps (alpha=0.85)...
+  ... completed 1000000 steps
+  ... completed 2000000 steps
+  ... completed 3000000 steps
+  ... completed 4000000 steps
+
+--- Comparison ---
+
+Top 15 nodes by Exact PageRank:
+1. Node 163075: 0.000952
+2. Node 597621: 0.000901
+3. Node 537039: 0.000895
+4. Node 837478: 0.000876
+5. Node 885605: 0.000822
+6. Node 551829: 0.000790
+7. Node 41909: 0.000779
+8. Node 605856: 0.000779
+9. Node 504140: 0.000746
+10. Node 819223: 0.000710
+11. Node 751384: 0.000693
+12. Node 908351: 0.000692
+13. Node 32163: 0.000691
+14. Node 558791: 0.000680
+15. Node 407610: 0.000672
+
+Top 15 nodes by Simulated PageRank (Random Walk):
+1. Node 597621: 0.000931
+2. Node 41909: 0.000929
+3. Node 163075: 0.000922
+4. Node 537039: 0.000906
+5. Node 384666: 0.000807
+6. Node 504140: 0.000745
+7. Node 32163: 0.000731
+8. Node 486980: 0.000726
+9. Node 558791: 0.000722
+10. Node 605856: 0.000718
+11. Node 551829: 0.000696
+12. Node 765334: 0.000687
+13. Node 751384: 0.000660
+14. Node 425770: 0.000629
+3. Node 163075: 0.000922
+4. Node 537039: 0.000906
+5. Node 384666: 0.000807
+6. Node 504140: 0.000745
+7. Node 32163: 0.000731
+8. Node 486980: 0.000726
+9. Node 558791: 0.000722
+10. Node 605856: 0.000718
+11. Node 551829: 0.000696
+12. Node 765334: 0.000687
+13. Node 751384: 0.000660
+14. Node 425770: 0.000629
+10. Node 605856: 0.000718
+11. Node 551829: 0.000696
+12. Node 765334: 0.000687
+13. Node 751384: 0.000660
+14. Node 425770: 0.000629
+13. Node 751384: 0.000660
+14. Node 425770: 0.000629
+15. Node 908351: 0.000620
+
+--- Visualization ---
+Plotting PageRank distribution to outputs/pagerank_exact_dist.png...
+Plotting PageRank distribution to outputs/pagerank_simulated_dist.png...      
+Plotting subgraph of top 50 nodes to outputs/top_50_subgraph.png...
